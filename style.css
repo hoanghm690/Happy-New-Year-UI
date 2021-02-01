@@ -1,0 +1,90 @@
+body {
+  background-color: black;
+}
+.app {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 140px auto;
+}
+.video .img_clock {
+  width: 310px;
+  height: 420px;
+  outline: none;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+.img_right {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+}
+.img_left {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+.img_fireworks {
+  position: fixed;
+  z-index: -1;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+}
+.player {
+  width: 350px;
+  height: 420px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+.player .img {
+  margin: 25px 0 0 0;
+  width: 80%;
+  border-radius: 50%;
+  animation: xoayvong 12s linear 0s infinite;
+  -webkit-animation: xoayvong 12s linear 0s infinite;
+  -moz-animation: xoayvong 12s linear 0s infinite;
+  -o-animation: xoayvong 12s linear 0s infinite;
+  cursor: pointer;
+}
+
+.player audio {
+  margin: 25px 0 0 0;
+  outline: none;
+}
+.text {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes xoayvong {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+}
+/* Standard syntax */
+@keyframes xoayvong {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+}
